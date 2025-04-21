@@ -1,0 +1,16 @@
+com\zach\ZakksTasks\security\JwtAuthenticationFilter.class
+com\zach\ZakksTasks\controller\AuthController.class
+com\zach\ZakksTasks\model\User$UserBuilder.class
+com\zach\ZakksTasks\model\User.class
+com\zach\ZakksTasks\service\CodeValidator.class
+com\zach\ZakksTasks\controller\TaskController.class
+com\zach\ZakksTasks\service\UserDetailsServiceImpl.class
+com\zach\ZakksTasks\ZakksTasksApplication.class
+com\zach\ZakksTasks\service\CodeExecutionService.class
+com\zach\ZakksTasks\model\Task$TaskBuilder.class
+com\zach\ZakksTasks\model\Task.class
+com\zach\ZakksTasks\repository\TaskRepository.class
+com\zach\ZakksTasks\controller\CodeExecutionController.class
+com\zach\ZakksTasks\repository\UserRepository.class
+com\zach\ZakksTasks\security\JwtUtil.class
+com\zach\ZakksTasks\security\SecurityConfig.class

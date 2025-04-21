@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/taskifydb
+    username: taskify
+    password: taskifypass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect  # <-- Ensure this is defined
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  sql:
+    init:
+      mode: always
+
+jwt:
+  secret: your_super_secret_key_here
+  expiration-ms: 3600000
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.hibernate: DEBUG
+    org.springframework: DEBUG
+  file:
+    name: logs/application.log  # Log file location
+

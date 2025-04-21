@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres
+    container_name: taskifydb-container
+    environment:
+      POSTGRES_DB: taskifydb
+      POSTGRES_USER: taskify
+      POSTGRES_PASSWORD: taskifypass
+    ports:
+      - "5432:5432"
+    volumes:
+      - taskifydb-data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: taskify-app
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+
+volumes:
+  taskifydb-data:
